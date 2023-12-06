@@ -1,0 +1,45 @@
+.hero2{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0,0,0,0.6);
+    position: relative;
+}
+.hero2::before{
+    content: "";
+    background-image: url(../assets/Hero-Section.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.hero2 h1{
+    font-size: 3rem;
+
+}
+.hero2 p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:510px){
+    .hero2 h1{
+        font-size: 2rem;
+
+    }
+    
+    .hero2 p{
+        font-size: 1.5rem;
+    }
+}
