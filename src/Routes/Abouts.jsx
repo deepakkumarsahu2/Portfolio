@@ -5,7 +5,7 @@ import AboutPage from "../Components/AboutPage";
 export default function Abouts() {
   return (
     <div>
-      <Hero_second heading="About Me" text="I am a Front-End Developer" />
+      <Hero_second heading="About Me" text="Do you Know Who i am ?" />
       <AboutPage />
     </div>
   );

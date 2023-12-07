@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div>
       <div className="about">
         <div className="left">
-          <h1>Who i am ?</h1>
+          <h1>This is Deepak</h1>
           <p>
             I am a Frontend React Developer. I makes Responsive Website Designs.
           </p>

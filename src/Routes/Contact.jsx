@@ -5,7 +5,10 @@ import ContactPage from "../Components/ContactPage";
 export default function Contact() {
   return (
     <div>
-      <Hero_second heading="Contact Me" text="Leave a Chat Here" />
+      <Hero_second
+        heading="Contact Me"
+        text="Have Any Project idea ? Contact me. Let's Build it together !😊"
+      />
       <ContactPage />
     </div>
   );

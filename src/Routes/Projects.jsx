@@ -5,7 +5,7 @@ import ProjectCard from "../Components/ProjectCard";
 export default function Projects() {
   return (
     <>
-      <Hero_second heading="Projects" text="Look of my Recent Works" />
+      <Hero_second heading="Projects" text="Look of my Recent Works ⬇️" />
       <ProjectCard />
     </>
   );
