@@ -70,3 +70,8 @@ h3{
 
     
 }
+@media screen and (max-width:560px){
+    p{
+        font-size: 0.8rem;
+    }
+}
