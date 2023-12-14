@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.css";
 import HeroP from "../assets/Hero_img.jpg";
 import { NavLink } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <div className="hero-section">
@@ -29,7 +34,9 @@ export default function Hero() {
               </Typewriter>
             </span>
           </p>
-          <h1>React Developer</h1>
+          <h1 data-aos="flip-right" data-aos-duration="1500">
+            React Developer
+          </h1>
           <NavLink to="/projects" className="btn1">
             Projects
           </NavLink>

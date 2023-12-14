@@ -23,7 +23,12 @@ export default function AboutPage() {
           </NavLink>
         </div>
         <div className="right">
-          <div className="img-sec" data-aos="zoom-in">
+          <div
+            className="img-sec"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <img src={img1} alt="about photo" />
           </div>
         </div>
@@ -35,7 +40,11 @@ export default function AboutPage() {
           <FaArrowCircleRight className="icon" />
         </div>
 
-        <div className="right-down" data-aos="zoom-out-right">
+        <div
+          className="right-down"
+          data-aos="zoom-in-up"
+          data-aos-duration="2000"
+        >
           <img src={img2} alt="Skills image" />
         </div>
       </div>
