@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./ProjectCard.css";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function ProjectComponent(props) {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
-      <div className="project-card">
+      <div className="project-card" data-aos="zoom-in-down">
         <img src={props.imgsrc} alt="weather photo" />
         <h2 className="title">{props.title}</h2>
         <div className="detail">

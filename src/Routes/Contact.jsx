@@ -7,7 +7,7 @@ export default function Contact() {
     <div>
       <Hero_second
         heading="Contact Me"
-        text="Have Any Project idea ? Contact me. Let's Build it together !😊"
+        text="Have Any Project idea ? Let's Build it together !😊"
       />
       <ContactPage />
     </div>

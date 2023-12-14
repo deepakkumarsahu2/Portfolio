@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import HeroP from "../assets/Hero_img.jpg";
 import { NavLink } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
@@ -12,7 +13,21 @@ export default function Hero() {
         </div>
         <div className="hero-content">
           <p>
-            hey ! This is <span>Deepak Kumar</span>
+            hey ! This is{" "}
+            <span>
+              {" "}
+              <Typewriter
+                words={["Deepak Kumar", "Deepak Kumar"]}
+                loop={10}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              >
+                Deepak Kumar
+              </Typewriter>
+            </span>
           </p>
           <h1>React Developer</h1>
           <NavLink to="/projects" className="btn1">

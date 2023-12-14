@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutPage.css";
 import { NavLink } from "react-router-dom";
 import img1 from "../assets/React1.jpg";
 import img2 from "../assets/Skill.gif";
 import { FaArrowCircleRight } from "react-icons/fa";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 export default function AboutPage() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
       <div className="about">
@@ -19,7 +23,7 @@ export default function AboutPage() {
           </NavLink>
         </div>
         <div className="right">
-          <div className="img-sec">
+          <div className="img-sec" data-aos="zoom-in">
             <img src={img1} alt="about photo" />
           </div>
         </div>
@@ -31,7 +35,7 @@ export default function AboutPage() {
           <FaArrowCircleRight className="icon" />
         </div>
 
-        <div className="right-down">
+        <div className="right-down" data-aos="zoom-out-right">
           <img src={img2} alt="Skills image" />
         </div>
       </div>
